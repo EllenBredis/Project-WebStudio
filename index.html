@@ -23,10 +23,16 @@
   <body>
     <!--Header-->
     <header class="header">
-      <div class="conteiner header__conteiner">
+      <d class="container header__conteiner">
         <a href="/" class="logo header__logo"
           ><span class="logo__title">Web</span>Studio</a
         >
+         <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-btn-icon" width="40px" height="40px">
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
 
         <nav class="nav">
           <ul class="nav__list">
@@ -59,49 +65,117 @@
           </li>
         </ul>
       </div>
+      </header>
+
+      <div class="mobile-menu" data-menu>       
+          <button class="menu-btn" type="button" data-menu-close>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#close_menu"></use>
+            </svg>
+          </button>
+
+       <div class="mobile-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link-phone" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a
+                class="header-contacts__link-mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header-contacts__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+         
+        </div>
+        
+
+        
+
+      </div>
     </header>
 
     <main>
       <!--Hero-->
-      <section class="hero">
-        <div class="conteiner hero__conteiner">
+      <!-- <section class="hero">
+        <div class="container hero__conteiner">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--Преимущества работы-->
-      <section class="benefits">
-        <div class="conteiner">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <!-- Убрать визуально название секции -->
-          <ul class="benefits__icon-list">
-            <li class="benefits__icon-item">
-              <svg class="benefits-icon" width="70px" height="70px">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </li>
-            <li class="benefits__icon-item">
-              <svg class="benefits-icon" width="70px" height="70px">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </li>
-            <li class="benefits__icon-item">
-              <svg class="benefits-icon" width="70px" height="70px">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </li>
-            <li class="benefits__icon-item">
-              <svg class="benefits-icon" width="70px" height="70px">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </li>
-          </ul>
-
-          <ul class="benefits__list">
+      <!-- <section class="benefits">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2> -->
+      <!-- Убрать визуально название секции -->
+      <!-- <ul class="benefits__list">
             <li class="benefits__item">
+              <div class="benefits__icon-item">
+                <svg class="benefits-icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="benefits__subtitle">Внимание к деталям</h3>
               <p class="benefits__desc">
                 Идейные соображения, а также начало повседневной работы по
@@ -109,6 +183,11 @@
               </p>
             </li>
             <li class="benefits__item">
+              <div class="benefits__icon-item">
+                <svg class="benefits-icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="benefits__subtitle">Пунктуальность</h3>
               <p class="benefits__desc">
                 Задача организации, в особенности же рамки и место обучения
@@ -116,6 +195,11 @@
               </p>
             </li>
             <li class="benefits__item">
+              <div class="benefits__icon-item">
+                <svg class="benefits-icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="benefits__subtitle">Планирование</h3>
               <p class="benefits__desc">
                 Равным образом консультация с широким активом в значительной
@@ -123,6 +207,11 @@
               </p>
             </li>
             <li class="benefits__item">
+              <div class="benefits__icon-item">
+                <svg class="benefits-icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="benefits__subtitle">Современные технологии</h3>
               <p class="benefits__desc">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -131,11 +220,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Чем мы занимаемся-->
-      <section class="about">
-        <div class="conteiner">
+      <!-- <section class="about">
+        <div class="container">
           <h2 class="about__title">Чем мы занимаемся</h2>
           <ul class="about__list">
             <li class="about__item">
@@ -170,11 +259,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
-      <section class="team">
-        <div class="conteiner">
+      <!-- <section class="team">
+        <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
@@ -443,12 +532,11 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </section> -->
 
-    <!-- Постоянные клиенты -->
-    <section class="clients">
-      <div class="conteiner">
+      <!-- Постоянные клиенты -->
+      <!-- <section class="clients">
+      <div class="container">
         <h2 class="clients__title">Постоянные клиенты</h2>
         <ul class="clients__list">
           <li class="clients__item">
@@ -525,11 +613,12 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
+    </main>
 
     <!--Footer-->
-    <footer class="footer">
-      <div class="footer__conteiner conteiner">
+    <!-- <footer class="footer">
+      <div class="footer__conteiner container">
         <div class="footer__group-left">
           <a href="/" class="logo footer__logo">
             <span class="logo__title">Web</span>Studio</a
@@ -655,7 +744,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- modal window -->
 
@@ -725,5 +814,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

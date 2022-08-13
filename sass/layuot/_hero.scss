@@ -1,12 +1,12 @@
 .hero {
-    background-color: $BgColorLight;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/images-main/img_background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: $BgColorHero;
+    // background-image: linear-gradient(to right,
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url(../images/images-main/img_background.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;

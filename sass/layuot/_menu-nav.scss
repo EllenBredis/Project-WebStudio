@@ -1,0 +1,93 @@
+.menu-btn {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+        fill: $AccentColor;
+    }
+
+    @media screen and (min-width: 768px) {
+       display: none;
+    }
+
+}
+.mobile-menu {
+position: fixed;
+top: 0;
+left: 0;
+background-color: $MainColor;
+  @media screen and (max-width: 767px){
+   width: 100%;
+   max-height:100%;
+   padding: 48px 40px;
+
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
+
+@include transition-base (opacity visibility);
+ 
+   &.is-open{
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+   }
+}
+
+}
+
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+
+.header-contacts__link-phone{
+@extend %reset-link;
+@include fonts(34px, 40px, 500, 0.02em);
+color: $AccentColor;
+
+
+
+
+}
+ 
+.header-contacts__link-mail{
+ @extend %reset-link;
+@include fonts(24px, 28px, 500, 0.02em);
+color: $SecondaryTextColor;
+margin-bottom: 64px;
+}
+
+.mobile-socials {
+    @extend %reset-list;
+
+    @media screen and (max-width: 767px) {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+
+    }
+
+
+    &__link {
+        @extend %reset-link;
+        color: $AccentColor;
+        @include fonts(18px, 22px, 500, 0.02em);
+        padding-right: 10px;
+        border-right: 1px solid $ModalFormBorderColor;
+    }
+}

@@ -1,14 +1,6 @@
 .benefits {
-@include section()
+    @include section()
 }
-
-.benefits__icon-list {
-    @extend %reset-list;
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-
-  }
 
 .benefits__icon-item {
     display: inline-flex;
@@ -17,11 +9,13 @@
     justify-content: center;
     align-items: center;
     background-color: $BgColorLight;
+    margin-bottom: 30px;
 }
 
 .benefits__list {
     @extend %reset-list;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     flex-basis: 270px;
 }
@@ -40,5 +34,5 @@
 .benefits__desc {
     color: $SecondaryTextColor;
     @include fonts(14px, 24px);
-    
+
 }
