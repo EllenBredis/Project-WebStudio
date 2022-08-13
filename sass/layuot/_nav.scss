@@ -44,10 +44,10 @@
     }
   
   
-    //  &:hover,
-    //  &:focus {
-    //     color: $AccentColor;
-    //  }
+     &:hover,
+     &:focus {
+        color: $AccentColor;
+     }
 
      &--current {
         color: $AccentColor;

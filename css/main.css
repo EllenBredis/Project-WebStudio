@@ -646,6 +646,9 @@ ul {
     padding-bottom: 32px;
   }
 }
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+}
 .nav__link--current {
   color: #2196f3;
 }
