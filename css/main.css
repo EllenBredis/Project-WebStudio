@@ -637,7 +637,7 @@ ul {
           flex-direction: column;
   gap: 30px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header-contacts {
     gap: 10px;
     margin-left: auto;
@@ -676,7 +676,7 @@ ul {
   -webkit-transition-property: color;
   transition-property: color;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-contacts__link {
     display: none;
   }
@@ -770,7 +770,6 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 270px;
   height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -779,7 +778,18 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f4fa;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__icon-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__icon-item {
+    width: 270px;
+  }
 }
 
 .benefits__list {
@@ -794,9 +804,34 @@ ul {
   -ms-flex-preferred-size: 270px;
       flex-basis: 270px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 354px;
+        flex-basis: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+  }
+}
 
-.benefits__item {
-  max-width: 270px;
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    max-width: 270px;
+  }
 }
 
 .benefits__subtitle {
@@ -806,6 +841,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: justify;
+  }
 }
 
 .benefits__desc {
