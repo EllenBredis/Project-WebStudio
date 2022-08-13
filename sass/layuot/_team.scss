@@ -12,6 +12,7 @@
             flex-direction: column;
             gap: 30px;
             flex-wrap: wrap;
+            
           
             @media screen and (min-width: 768px) {
                     flex-direction: row;
@@ -21,15 +22,19 @@
            }
     
         &__item {
+            margin-right: 0;
+                      
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
            }
     
         &__img {
             @extend %reset-img;
+            
            }
     
         &__wrapper {
+           box-sizing: border-box;
            padding-top: 30px;
            padding-bottom: 24px;
            padding-right: 5px;
@@ -37,12 +42,13 @@
            background-color: $MainColor;
            border: 1px solid $MainBorderColor;
            border-top: none;
+         }
+           
             
             @media screen and (min-width: 1200px) {
                     padding-bottom: 30px;
                 }
-            }
-
+            
             
     
         &__subtitle {

@@ -1,18 +1,23 @@
 .footer-contacts__list {
     @extend %reset-list;
     font-style: normal;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 60px;
 
-.footer-contacts__item {
-    margin-bottom: 9px;
-
-    &:last-child {
+    @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
+     @media screen and (min-width: 1200px){
+        align-items: normal;
+     }
+
 }
 
 .footer-contacts__link {
-    @extend %reset-link;
+     @extend %reset-link;
     color: $TextColorLight;
     @include fonts(14px, 24px);
     
