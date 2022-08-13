@@ -1,5 +1,18 @@
 .hero {
     background-color: $BgColorHero;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px;
+
+    @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+
+     @media screen and (min-width: 1200px) {
+     max-width: 1200px;
+                 }
+    
+
     // background-image: linear-gradient(to right,
     //         rgba(47, 48, 58, 0.4),
     //         rgba(47, 48, 58, 0.4)),
@@ -7,25 +20,42 @@
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: cover;
-    max-width: 1600px;
+    
+&__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 768px;
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
 
+    @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
 
-&__conteiner {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
+@media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    }
 
 &__title {
+   @include fonts(26px, 42px, 900, 0.06em);
     margin-bottom: 30px;
-    max-width: 696px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
-
+    
     color: $MainColor;
-    @include fonts(44px, 60px, 900, 0.06em);
+    
     text-align: center;
     text-transform: uppercase;
-}
+    }
+
+@media screen and (min-width: 1200px) {
+     @include fonts(44px, 60px, 900, 0.06em);
+       }
+   
 }
