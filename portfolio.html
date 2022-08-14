@@ -22,11 +22,16 @@
 
   <body>
     <!--Header-->
-    <header class="header">
-      <div class="conteiner header__conteiner">
+   <header class="header">
+      <d class="container header__conteiner">
         <a href="/" class="logo header__logo"
           ><span class="logo__title">Web</span>Studio</a
         >
+         <button class="menu-btn" type="button" data-menu-open>
+          <svg class="menu-btn-icon" width="40px" height="40px">
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
 
         <nav class="nav">
           <ul class="nav__list">
@@ -59,15 +64,96 @@
           </li>
         </ul>
       </div>
+
+       <div class="mobile-menu" data-menu>       
+          <button class="menu-btn" type="button" data-menu-close>
+            <svg width="40px" height="40px">
+              <use href="./images/icons.svg#close_menu"></use>
+            </svg>
+          </button>
+
+       <div class="mobile-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link-phone" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a
+                class="header-contacts__link-mail"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header-contacts__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                class="mobile-socials__link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+         
+        </div>
+      </div>
     </header>
 
     <!-- main -->
     <main>
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="conteiner">
-          <h1 class="visually-hidden">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1> -->
           <!-- скрыть заголовок -->
-          <ul class="portfolio__btn-list">
+          <!-- <ul class="portfolio__btn-list">
             <li class="portfolo__btn-item">
               <button class="portfolio__btn" type="button">Все</button>
             </li>
@@ -274,12 +360,13 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!--Footer-->
     <footer class="footer">
-      <div class="footer__conteiner conteiner">
-        <div class="footer__group-left">
+      <div class="footer__conteiner container">
+        <div class="footer-tab">
+           <div class="footer__group-left">
           <a href="/" class="logo footer__logo">
             <span class="logo__title">Web</span>Studio</a
           >
@@ -287,7 +374,7 @@
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a
-                  class="footer-contacts__link footer-contacts__link--inverse"
+                  class="link footer-contacts__link footer-contacts__link--inverse"
                   href="https://goo.gl/maps/JHtLggVv29iKPNGR7"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -383,13 +470,15 @@
             </li>
           </ul>
         </div>
-
+        </div>
+       
         <div class="footer-group-right">
           <p class="footer__subtitle">Подпишитесь на рассылку</p>
           <form class="form-subscription">
             <input
               class="form-subscription__input"
               type="email"
+              autocomplete="off"
               name="email"
               placeholder="E-mail"
               required
