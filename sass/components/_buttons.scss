@@ -43,9 +43,21 @@
 .portfolio__btn-list {
     @extend %reset-list;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-basis: calc((100% - 8px * 3) / 4);
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 30;
+            justify-content: center;
+        }
+
+     @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+         }
+
+    
 }
 
 .portfolio__btn {
