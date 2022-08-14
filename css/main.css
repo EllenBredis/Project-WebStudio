@@ -786,6 +786,7 @@ ul {
   .header-contacts__icon {
     fill: currentColor;
     margin-right: 10px;
+    display: block;
   }
 }
 
@@ -1054,6 +1055,9 @@ ul {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.team__img {
+  max-width: 450px;
+}
 .team__wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1154,9 +1158,6 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1226,6 +1227,10 @@ ul {
 .portfolio-card__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-card__img {
+  max-width: 450px;
 }
 
 .portfolio-card__overlay {
@@ -1338,6 +1343,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__subtitle {
     padding-top: 12px;
+    text-align: justify;
   }
 }
 

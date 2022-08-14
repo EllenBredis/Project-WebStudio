@@ -33,7 +33,9 @@
     
         &__img {
             @extend %reset-img;
-            
+            max-width: 450px;
+
+                       
            }
     
         &__wrapper {
@@ -69,4 +71,6 @@
             margin-bottom: 10px;
            }
     }
+
+
 
