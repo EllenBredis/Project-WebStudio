@@ -1,8 +1,20 @@
 .form__field {
     display: block;
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 10px; 
 }
+
+ .modal__title {
+     display: inline-block;
+     margin-bottom: 12px;
+     text-align: center;
+    @include fonts(20px, 30px, 700);
+
+    @media screen and (min-width: 1200px) {
+        @include fonts(20px, 23px, 700);
+        }
+     
+ }
 
 .form__lable {
     display: inline-block;
@@ -15,15 +27,23 @@
 
 .form__input {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding: 12px 12px;
-    padding-left: 42px;
+
     outline: none;
     border: 1px solid $ModalFormBorderColor;
-
+    
     @include transition-base (border);
+  
+    @media screen and (min-width: 1200px) {
+            width: 448px;
+        }
 
+    
+    
+    // padding-left: 42px;
+    
 
     &:hover,
     &:focus {
@@ -37,12 +57,18 @@
     font-family: inherit;
     font-size: inherit;
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
     outline: none;
+    margin-bottom: 0;
     border: 1px solid $ModalFormBorderColor;
-
+    
+    
     @include transition-base (border);
+
+    @media screen and (min-width: 1200px) {
+            width: 448px;
+        }
 
     &:hover,
     &:focus {
@@ -74,7 +100,7 @@
 
 .form-checkbox {
     display: flex;
-
+    gap: 7px;
     margin-top: 20px;
     margin-bottom: 30px;
     align-items: center;
@@ -98,8 +124,7 @@
 .form-checkbox__icon {
     border: 2px solid $PraimaryTextColor;
     border-radius: 2px;
-    margin-right: 7px;
-
+    
     .form-checkbox__check:checked+& {
             background-color: $AccentColor;
             background-origin: border-box;
@@ -108,18 +133,23 @@
 }
 
 .form__policy-dsc {
-    margin-right: 5px;
-
-    @include fonts(14px, 24px);
-    
+    @include fonts(12px, 14px);
     color: $SecondaryTextColor;
+
+    @media screen and (min-width: 1200px) {
+            @include fonts(14px, 24px);
+        }
+
+    
+   
 }
 
 .form__policy-link {
     @include fonts(12px, 14px);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: $AccentColor;
+     color: $AccentColor;
+
+    @media screen and (min-width: 1200px) {
+            @include fonts(14px, 24px);
+        }
 }
 
