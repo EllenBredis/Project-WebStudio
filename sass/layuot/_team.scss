@@ -2,6 +2,11 @@
     @include section ();
     background-color: $BgColorLight;
 
+    @media screen and (min-width: 1200px) {
+            display: block;
+            @include section(94px, 94px);
+        }
+
         &__title{
             @extend %section-title;
         }   
@@ -52,12 +57,7 @@
            width: 100%;
          }
            
-         @media screen and (min-width: 1200px) {
-                    padding-bottom: 30px;
-                }
-            
-            
-    
+          
         &__subtitle {
             margin-bottom: 10px;
     
