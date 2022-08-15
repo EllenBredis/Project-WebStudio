@@ -1206,6 +1206,16 @@ ul {
   border-top: none;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-card__wrapper {
+    height: 146px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card__wrapper {
+    height: 100%;
+  }
+}
 
 .portfolio-card__title {
   font-weight: 700;
