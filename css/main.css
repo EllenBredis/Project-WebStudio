@@ -238,14 +238,15 @@ ul {
 }
 
 .modal {
+  outline: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -259,8 +260,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -273,7 +274,7 @@ ul {
 .modal-btn {
   position: absolute;
   top: 8px;
-  right: 8px;
+  right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,8 +294,19 @@ ul {
   -webkit-transition-property: fill;
   transition-property: fill;
 }
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    top: 8px;
+    right: 8px;
+  }
+}
 .modal-btn:hover, .modal-btn:focus {
   fill: #2196f3;
+}
+
+.form {
+  width: auto;
+  height: auto;
 }
 
 .form__field {
@@ -332,7 +344,7 @@ ul {
 
 .form__input {
   display: block;
-  width: 370px;
+  min-width: 370px;
   height: 40px;
   padding: 12px 12px;
   outline: none;
@@ -344,7 +356,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .form__input {
-    width: 448px;
+    min-width: 448px;
   }
 }
 .form__input:hover, .form__input:focus {
@@ -356,7 +368,7 @@ ul {
   font-family: inherit;
   font-size: inherit;
   resize: none;
-  width: 370px;
+  min-width: 370px;
   height: 120px;
   outline: none;
   margin-bottom: 0;
